@@ -21,4 +21,4 @@ De vragen die in dit document beschreven worden, zijn vragen die door de databas
 Extra:
   * Wat is de gemiddelde duur voor het invullen van een poll?
   * Wat is het (minst) favoriete tijdstip voor het invullen van een poll?
-  * Wie is de best/slecht beoordeelde gebruiker?
+  * Wie is de best/slechts beoordeelde gebruiker?
