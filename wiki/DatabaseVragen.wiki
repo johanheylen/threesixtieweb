@@ -221,4 +221,13 @@ Extra:
   * Wat is het (minst) favoriete tijdstip voor het invullen van een poll?
   Hiervan vind ik de specifieke query nog niet direct. Dit is volgens mij ook moeilijk om te bepalen uit de database. Als we 'tijdstip' interpreteren als dag, moet men de dagen uit de database sorteren, en dan de datum die het minst voorkomt gebruiken. Maar als we 'tijdstip' gaan interpreteren als uur, dan moet de data gesorteerd worden en dan moet het uur tussen begin en eind datum, dat het minst voorkomt, geselecteerd worden.
   * Wie is de best/slechts beoordeelde gebruiker?
-     Gemiddelde score van alle gebruikers op alle vragen berekenen. En dan deze gemiddelden optellen. Hieruit kan men dan beste/slechtste gebruiker vinden.
+    {{{
+    CREATE VIEW Total_Average_Score AS
+    SELECT p.Reviewee AS Reviewee, AVG(a.Answer) AS Average_Score
+    FROM answer a
+    JOIN poll p ON a.Poll = p.ID
+    GROUP BY Reviewee;
+
+    SELECT Reviewee, MAX(Average_Score)
+    FROM Total_Average_Score;
+    }}}
