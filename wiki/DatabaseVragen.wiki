@@ -1,4 +1,5 @@
 #summary In dit document staan die vragen die door die database beantwoord kunnen worden.
+#labels Phase-QA
 
 = Introduction =
 De vragen die in dit document beschreven worden, zijn vragen die door de database beantwoord kunnen worden. Eerst zullen er enkel de vragen staan, maar systematisch zullen er ook queries toegevoegd worden.
