@@ -6,18 +6,206 @@ De vragen die in dit document beschreven worden, zijn vragen die door de databas
 
 = Details =
   * Wie heeft zijn/haar eigen vragenlijst nog niet ingevuld?
+    {{{
+    SELECT *
+    FROM user
+    WHERE ID != ANY(
+        SELECT Reviewer
+        FROM poll
+        WHERE Reviewee = Reviewer
+    );
+    }}}
   * Wie heeft alle vragenlijsten ingevuld?
-  * Wie heeft nog geen vragenlijsten ingevuld?
-  * Wat is e gemiddelde score op 1 vraag van 1 gebruiker?
+    {{{
+    SELECT *
+    FROM user
+    WHERE
+        ID IN (
+            SELECT Reviewer
+            FROM poll
+        )
+        AND
+        ID IN(
+            SELECT Reviewer
+            FROM poll
+            WHERE Status = (
+                SELECT ID 
+                FROM Status 
+                WHERE Name = 'Ingestuurd'
+            )
+    );
+    }}}
+  * Wie heeft nog geen andere vragenlijsten ingevuld?
+    {{{
+    SELECT *
+    FROM user
+    WHERE 
+  	ID NOT IN(
+    	    SELECT Reviewer
+    	    FROM poll
+    	    WHERE Reviewer != Reviewee
+        )
+        OR
+        ID = ANY(
+            SELECT Reviewer
+            FROM poll
+            WHERE Status = (
+                SELECT ID
+                FROM status
+                WHERE Name = 'Niet ingevuld'
+            )
+        );
+    }}}
+  * Wat is de gemiddelde score op 1 vraag van 1 gebruiker?
+    {{{
+    SELECT p.Reviewee AS Reviewee, a.Question AS Question, AVG(a.Answer) AS Average_Score
+    FROM answer a
+    JOIN poll p
+    ON a.Poll = p.ID
+    GROUP BY QUESTION, REVIEWEE;
+    }}}
   * Wat is de gemiddelde score op 1 vraag van iedereen?
-  * Door hoveel teamleden wordt een gebruiker gereviewed?
-  * Door hoeveel niet-teamleden wordrt een gebruiker gereviewed?
-  * Door hoeveel managers wordt een geruiker gereviewed?
+    {{{
+    SELECT a.Question AS Question, AVG(a.Answer) AS Average_Score
+    FROM answer a
+    JOIN poll p
+    ON a.Poll = p.ID
+    GROUP BY Question;
+    }}}
+  * Door hoeveel teamleden wordt een gebruiker gereviewed?
+    {{{
+    SELECT p.Reviewee, count(*) AS Aantal_Teamleden
+    FROM poll p
+    WHERE
+        p.Reviewee != p.Reviewer
+        AND
+        p.Reviewer NOT IN (
+            SELECT Manager
+            FROM department
+            WHERE ID = (
+                SELECT Department
+                FROM user
+                WHERE ID = p.Reviewee
+            )
+        )
+        AND
+        p.Reviewer = ANY (
+            SELECT ID
+            FROM user
+            WHERE Department = (
+                SELECT Department
+                FROM user
+                WHERE ID = p.Reviewee
+            )
+        )
+    GROUP BY Reviewee;
+    }}}
+  * Door hoeveel niet-teamleden wordt een gebruiker gereviewed?
+    {{{
+    SELECT p.Reviewee, count(*) AS Aantal_NietTeamleden
+    FROM poll p
+    WHERE
+        p.Reviewee != p.Reviewer
+        AND
+        p.Reviewer NOT IN (
+            SELECT Manager
+            FROM department
+        )
+        AND
+        p.Reviewer NOT IN (
+            SELECT ID
+            FROM user
+            WHERE Department = (
+                SELECT Department
+                FROM user
+                WHERE ID = p.Reviewee
+            )
+        )
+    GROUP BY Reviewee;
+    }}}
+  * Door hoeveel managers wordt een gebruiker gereviewed (eigen manager mag niet)?
+{{{
+    SELECT p.Reviewee, count(*) AS Aantal_NietTeamManagers
+    FROM poll p
+    WHERE
+        p.Reviewee != p.Reviewer
+        AND
+        p.Reviewer = ANY (
+    	    SELECT Manager
+            FROM department
+            WHERE ID != (
+            	SELECT Department
+           		FROM user
+            	WHERE ID = p.Reviewee
+            )
+        )
+    GROUP BY Reviewee;
+    }}}
   * Hoeveel reviews heeft een gebruiker gegeven (doorgestuurd)?
+    {{{
+    SELECT Reviewer, count(*) AS Aantal_Reviews_Doorgestuurd
+    FROM poll
+    WHERE 
+	Status = (
+            SELECT ID 
+            FROM Status
+            WHERE Name = 'Ingestuurd'
+        )
+        AND
+        Reviewer != Reviewee
+    GROUP BY Reviewer;
+    }}}
   * Hoeveel reviews een een gebruiker gekregen (doorgestuurd)?
+    {{{
+    SELECT Reviewee, count(*) AS Aantal_Reviews_Gekregen
+    FROM poll
+    WHERE 
+	Status = (
+            SELECT ID
+            FROM Status
+            WHERE Name = 'Ingestuurd'
+        )
+        AND
+        Reviewer != Reviewee
+    GROUP BY Reviewee;
+    }}}
   * Wie heeft alle reviews ingevuld (opgeslagen) maar nog niet doorgestuurd?
+    {{{
+    SELECT *
+    FROM user
+    WHERE
+        ID IN (
+            SELECT Reviewer
+            FROM poll
+        )
+        AND
+        ID IN(
+            SELECT Reviewer
+            FROM poll
+            WHERE Status = (
+                SELECT ID 
+                FROM Status 
+                WHERE Name = 'Opgeslagen'
+            )
+    );
+    }}}
   * Hoeveel reviewees, die een reviewer heeft geselecteerd, mag hij/zij ook effectief reviewen?
+    {{{
+    SELECT Reviewer, count(*) AS Aantal_Preferred_Reviewees
+    FROM preferred_poll pf
+    WHERE
+        pf.Reviewee = ANY(SELECT Reviewee FROM poll WHERE Reviewer = pf.Reviewer)
+        AND
+    	pf.User = pf.Reviewer
+    GROUP BY pf.Reviewer;
+    }}}
   * Hoeveel reviewers, die een reviewee heeft geselecteerd, reviewed deze reviewer ook effectief?
+    {{{
+    SELECT User AS Reviewee, count(*) AS Aantal_Preferred_Reviewers
+    FROM preferred_poll pf
+    WHERE pf.Reviewer = ANY(SELECT Reviewer FROM poll WHERE Reviewee = pf.User)
+    GROUP BY pf.Reviewee;
+    }}}
 
 Extra:
   * Wat is de gemiddelde duur voor het invullen van een poll?
