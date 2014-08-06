@@ -1,0 +1,24 @@
+#In dit document staan die vragen die door die database beantwoord kunnen worden.
+
+= Introduction =
+De vragen die in dit document beschreven worden, zijn vragen die door de database beantwoord kunnen worden. Eerst zullen er enkel de vragen staan, maar systematisch zullen er ook queries toegevoegd worden.
+
+= Details =
+  * Wie heeft zijn/haar eigen vragenlijst nog niet ingevuld?
+  * Wie heeft alle vragenlijsten ingevuld?
+  * Wie heeft nog geen vragenlijsten ingevuld?
+  * Wat is e gemiddelde score op 1 vraag van 1 gebruiker?
+  * Wat is de gemiddelde score op 1 vraag van iedereen?
+  * Door hoveel teamleden wordt een gebruiker gereviewed?
+  * Door hoeveel niet-teamleden wordrt een gebruiker gereviewed?
+  * Door hoeveel managers wordt een geruiker gereviewed?
+  * Hoeveel reviews heeft een gebruiker gegeven (doorgestuurd)?
+  * Hoeveel reviews een een gebruiker gekregen (doorgestuurd)?
+  * Wie heeft alle reviews ingevuld (opgeslagen) maar nog niet doorgestuurd?
+  * Hoeveel reviewees, die een reviewer heeft geselecteerd, mag hij/zij ook effectief reviewen?
+  * Hoeveel reviewers, die een reviewee heeft geselecteerd, reviewed deze reviewer ook effectief?
+
+Extra:
+  * Wat is de gemiddelde duur voor het invullen van een poll?
+  * Wat is het (minst) favoriete tijdstip voor het invullen van een poll?
+  * Wie is de best/slecht beoordeelde gebruiker?
