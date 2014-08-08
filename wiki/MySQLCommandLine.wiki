@@ -1,6 +1,6 @@
 #Code voor MySQL command line
 
-= Introduction =
+= Code =
 
 {{{
 c:\xampp\mysql\bin>mysql -h loclhost -P 3306 threesixtyweb -u root -p
@@ -9,3 +9,6 @@ mysql> use threesixtyweb
 Database changed
 mysql> source c:/xampp/htdocs/threesixtyweb/sql/view.sql
 }}}
+
+= Aanpassingen in Windows =
+Path aanpassen (C:\xampp\mysql\bin)
