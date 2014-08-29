@@ -17,17 +17,18 @@ Gebruiker:
 
 Admin:
 X1) Gebruikernaam en wachtwoord zijn verplicht om aan te melden
-2) Admin kan aanmelden met gebruikersnaam en wachtwoord
-3) Admin kan niet aanmelden met een foutief wachtwoord. Hierbij wordt een melding gegenereerd.
-4) Gebruikersnaam is niet hoofdlettergevoelig
+X2) Admin kan aanmelden met gebruikersnaam en wachtwoord
+X3) Admin kan niet aanmelden met een foutief wachtwoord. Hierbij wordt een melding gegenereerd.
+X4) Gebruikersnaam is niet hoofdlettergevoelig
 X5) Admin kan een nieuw wachtwoord aanvragen via de admin_forgot pagina
-6) Admin kan nieuwe batch starten
+X6) Admin kan nieuwe batch starten
 7) Admin kan de parameters van een nieuwe batch wijzigen.
 8) Admin kan bij het toevoegen van een nieuwe batch, de vragen wijzigen en nieuwe vragen toevoegen.
 9) Admin kan status van de batch wijzigen.
 10) Na de bereking van vragenlijsten kan de admin beslissen om deze vragenlijsten te aanvaarden, of om het algortime opnieuw te laten rekenen.
-11) Admin kan nieuwe gebruikers toevoegen en deze aan een departement koppelen
-12° Admin kan gebruikers wijzigen
-13) Admin kan nieuw departement toevoegen, en een manager uit het management departement toevoegen.
-14) Admin kan departementen wijzigen
-15) Gebruiker kan zich afmelden.
+X11) Admin kan nieuwe gebruikers toevoegen en deze aan een departement koppelen
+X12) Admin kan gebruikers wijzigen/verwijderen
+X13) Admin kan enkel gebruiker verwijderen die geen managers van een departement zijn.
+X14) Admin kan nieuw departement toevoegen, en een manager uit het management departement toevoegen.
+X15) Admin kan departementen wijzigen/verwijderen
+X16) Admin kan zich afmelden.
