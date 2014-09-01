@@ -23,23 +23,23 @@ Gebruiker:
 22) Gebruiker kan zich afmelden
 
 Admin:
-1) Gebruikernaam en wachtwoord zijn verplicht om aan te melden
-2) Admin kan aanmelden met gebruikersnaam en wachtwoord
-3) Admin kan niet aanmelden met een foutief wachtwoord. Hierbij wordt een melding gegenereerd.
-4) Gebruikersnaam is niet hoofdlettergevoelig
-5) Admin kan een nieuw wachtwoord aanvragen via de admin_forgot pagina
-6) Admin kan nieuwe batch starten
-7) Admin kan de parameters van een nieuwe batch wijzigen.
+X1) Gebruikernaam en wachtwoord zijn verplicht om aan te melden
+X2) Admin kan aanmelden met gebruikersnaam en wachtwoord
+X3) Admin kan niet aanmelden met een foutief wachtwoord. Hierbij wordt een melding gegenereerd.
+X4) Gebruikersnaam is niet hoofdlettergevoelig
+X5) Admin kan een nieuw wachtwoord aanvragen via de admin_forgot pagina
+X6) Admin kan nieuwe batch starten
+X7) Admin kan de parameters van een nieuwe batch wijzigen.
 8) Admin kan bij het toevoegen van een nieuwe batch, de vragen wijzigen en nieuwe vragen toevoegen.
 9) Zodra er een batch is gestart, kan er geen nieuwe batch gestart worden
 10) Een nieuwe batch kan pas gestart worden als de vorige batch zich in de 'Published' fase bevindt, of als er geen batches beschikbaar zijn
 11) Admin kan status van de batch wijzigen.
 12) Na de bereking van vragenlijsten kan de admin beslissen om deze vragenlijsten te aanvaarden, of om het algortime opnieuw te laten rekenen.
 13) Admin kan herinneringen verzenden naar gebruikers in fase 1 en fase 2 (aantal personen hangt af van hoeveel mensen de vragenlijsten nog niet hebben ingevuld)
-14) Admin kan nieuwe gebruikers toevoegen en deze aan een departement koppelen
-15) Admin kan gebruikers wijzigen/verwijderen
-16) Admin kan enkel gebruiker verwijderen die geen managers van een departement zijn.
-17) Admin kan nieuw departement toevoegen, en een manager uit het management departement toevoegen.
-18) Admin kan departementen wijzigen/verwijderen
+X14) Admin kan nieuwe gebruikers toevoegen en deze aan een departement koppelen
+X15) Admin kan gebruikers wijzigen/verwijderen
+X16) Admin kan enkel gebruiker verwijderen die geen managers van een departement zijn.
+X17) Admin kan nieuw departement toevoegen, en een manager uit het management departement toevoegen.
+X18) Admin kan departementen wijzigen/verwijderen
 19) Admin kan resultaten van de gebruikers bekijken, inclusief PDF
-20) Admin kan zich afmelden.
+X20) Admin kan zich afmelden.
