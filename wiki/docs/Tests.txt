@@ -1,26 +1,26 @@
 Gebruiker:
-1) Gebruikersnaam en wachtwoord zijn verplicht om aan te melden
-2) Gebruiker kan aanmelden met gebruikersnaam en wachtwoord
-3) Gebruiker kan niet aanmelden met foutief wachtwoord. Hierbij wordt een melding gegenereerd.
-4) Gebruikersnaam is niet hoofdletter gevoelig
-5) Gebruiker kan een nieuw wachtwoord genereren via de forgot pagina
-6) Gebruiker kan enkel de login pagina bekijken als hij niet is aangemeld.
-7) Gebruiker kan enkel aanmelden als een batch zich in fase 1, fase 2 of published fase bevindt.
-8) Gebruiker kan zijn eigen vragenlijst invullen
-9) Gebruiker kan zijn eigen vragenlijst opslaan, en deze later bewerken
-10) Gebruiker kan zijn eigen vragenlijst doorsturen, deze kan later niet bewerkt worden
-11) Gebruiker kan preferred reviewers/reviewees aanduiden
-12) Gebruiker kan preferred reviewers/reviewees doorsturen, en deze later bewerken
-13) Preferred reviewers/reviewees worden opgeslagen in de database
-14) Na het invoegen van preferred reviewees, krijgt de gebruiker het afsluit scherm. Door op dit scherm op aflsuiten te klikken, wordt de gebruiker afgemeld en doorgestuurd naar het loginscherm.
-15) Gebruiker kan hierna terug aanmelden, en zijn vragenlijsten en preferred reviewers/reviewees zijn onthouden gebleven
+X1) Gebruikersnaam en wachtwoord zijn verplicht om aan te melden
+X2) Gebruiker kan aanmelden met gebruikersnaam en wachtwoord
+X3) Gebruiker kan niet aanmelden met foutief wachtwoord. Hierbij wordt een melding gegenereerd.
+X4) Gebruikersnaam is niet hoofdletter gevoelig
+X5) Gebruiker kan een nieuw wachtwoord genereren via de forgot pagina
+X6) Gebruiker kan enkel de login pagina bekijken als hij niet is aangemeld.
+X7) Gebruiker kan enkel aanmelden als een batch zich in fase 1, fase 2 of published fase bevindt.
+X8) Gebruiker kan zijn eigen vragenlijst invullen
+X9) Gebruiker kan zijn eigen vragenlijst opslaan, en deze later bewerken
+X10) Gebruiker kan zijn eigen vragenlijst doorsturen, deze kan later niet bewerkt worden
+X11) Gebruiker kan preferred reviewers/reviewees aanduiden
+X12) Gebruiker kan preferred reviewers/reviewees doorsturen, en deze later bewerken
+X13) Preferred reviewers/reviewees worden opgeslagen in de database
+X14) Na het invoegen van preferred reviewees, krijgt de gebruiker het afsluit scherm. Door op dit scherm op aflsuiten te klikken, wordt de gebruiker afgemeld en doorgestuurd naar het loginscherm.
+X15) Gebruiker kan hierna terug aanmelden, en zijn vragenlijsten en preferred reviewers/reviewees zijn onthouden gebleven
 16) In fase 2 kan de gebruiker de vragenlijsten invullen die voor hem zijn bepaald.
 17) Het opslaan/versturen van de vragenlijst werkt exact hetzelfde als tijdens fase 1
 18) Gebruiker kan extra commentaar toevoegen aan een vragenlijst
 19) Gebruiker kan extra commentaar geven over een gebruiker waar hij de vragenlijst niet van mag invullen
 20) Gebruiker kan deze extra commentaar wijzigen of verwijderen
 21) Gebruiker kan zijn eigen resultaten bekijken van een batch in de 'Published' fase
-22) Gebruiker kan zich afmelden
+X22) Gebruiker kan zich afmelden
 
 Admin:
 X1) Gebruikernaam en wachtwoord zijn verplicht om aan te melden
@@ -30,16 +30,16 @@ X4) Gebruikersnaam is niet hoofdlettergevoelig
 X5) Admin kan een nieuw wachtwoord aanvragen via de admin_forgot pagina
 X6) Admin kan nieuwe batch starten
 X7) Admin kan de parameters van een nieuwe batch wijzigen.
-8) Admin kan bij het toevoegen van een nieuwe batch, de vragen wijzigen en nieuwe vragen toevoegen.
-9) Zodra er een batch is gestart, kan er geen nieuwe batch gestart worden
-10) Een nieuwe batch kan pas gestart worden als de vorige batch zich in de 'Published' fase bevindt, of als er geen batches beschikbaar zijn
-11) Admin kan status van de batch wijzigen.
-12) Na de bereking van vragenlijsten kan de admin beslissen om deze vragenlijsten te aanvaarden, of om het algortime opnieuw te laten rekenen.
-13) Admin kan herinneringen verzenden naar gebruikers in fase 1 en fase 2 (aantal personen hangt af van hoeveel mensen de vragenlijsten nog niet hebben ingevuld)
+X8) Admin kan bij het toevoegen van een nieuwe batch, de vragen wijzigen en nieuwe vragen toevoegen.
+X9) Zodra er een batch is gestart, kan er geen nieuwe batch gestart worden
+X10) Een nieuwe batch kan pas gestart worden als de vorige batch zich in de 'Published' fase bevindt, of als er geen batches beschikbaar zijn
+X11) Admin kan status van de batch wijzigen.
+X12) Na de bereking van vragenlijsten kan de admin beslissen om deze vragenlijsten te aanvaarden, of om het algortime opnieuw te laten rekenen.
+X13) Admin kan herinneringen verzenden naar gebruikers in fase 1 en fase 2 (aantal personen hangt af van hoeveel mensen de vragenlijsten nog niet hebben ingevuld)
 X14) Admin kan nieuwe gebruikers toevoegen en deze aan een departement koppelen
 X15) Admin kan gebruikers wijzigen/verwijderen
 X16) Admin kan enkel gebruiker verwijderen die geen managers van een departement zijn.
 X17) Admin kan nieuw departement toevoegen, en een manager uit het management departement toevoegen.
 X18) Admin kan departementen wijzigen/verwijderen
-19) Admin kan resultaten van de gebruikers bekijken, inclusief PDF
+X19) Admin kan resultaten van de gebruikers bekijken, inclusief PDF
 X20) Admin kan zich afmelden.
