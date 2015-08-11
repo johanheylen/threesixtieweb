@@ -4,7 +4,7 @@ require_once 'libs/PHPMailer/PHPMailerAutoload.php';
 ob_start();
 function mailFromProject($to, $toName, $subject, $message)
 {
-    $appLocation = 'http://' . $_SERVER["SERVER_NAME"];
+    $appLocation = 'https://' . $_SERVER["SERVER_NAME"];
     $message = $message . "<p>" . $appLocation . "</p>";
 
     $m = new PHPMailer;
