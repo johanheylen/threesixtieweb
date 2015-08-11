@@ -64,6 +64,8 @@ INSERT INTO user_department (User, Department) VALUES
   ((SELECT ID FROM user WHERE Username = 'koenz'), (SELECT ID FROM department WHERE Name = 'Internal Affairs'));
 INSERT INTO user_department (User, Department) VALUES
   ((SELECT ID FROM user WHERE Username = 'kristoft'), (SELECT ID FROM department WHERE Name = 'Internal Affairs'));
+INSERT INTO user_department (User, Department) VALUES
+  ((SELECT ID FROM user WHERE Username = 'peterv'), (SELECT ID FROM department WHERE Name = 'Internal Affairs'));
 
 INSERT INTO user_department (User, Department) VALUES
   ((SELECT ID FROM user WHERE Username = 'jonass'), (SELECT ID FROM department WHERE Name = 'External Relations'));
