@@ -140,7 +140,7 @@ INSERT INTO parameter (Short_name, Name, Value) VALUES
   ('Reviews_by_not_teammanager', 'Maximum aantal reviews door (niet eigen) manager', 1),
 /*('Reviews_selected_reviewees', 'Minimaal aantal reviews dat reviewer geeft aan gebruikers die hij heeft geselecteerd', 3),
 ('Reviews_selected_reviewers', 'Minimaal aantal reviews dat reviewee krijgt van gebruikers die hij heeft geselecteerd', 2),*/
-  ('Reviews_own_department', 'Maximum aantal reviews uit eigen departement', 2);
+  ('Reviews_own_department', 'Maximum aantal reviews uit eigen departement', 4);
 
 /* Antwoord mogelijkheden toevoegen aan database */
 INSERT INTO answer_enum (Name, Description) VALUES

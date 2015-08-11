@@ -9,7 +9,7 @@
  *        JA=     [0;    -10]
  *        NEE= [10;    20]
  **/
-set_time_limit(60);
+set_time_limit(300);
 $selected_page = "Home";
 require('includes/header.php');
 $users = get_users_order_by_id();
