@@ -2,7 +2,7 @@
 TRUNCATE TABLE text_nl;
 /* you can consider truncating tables in this kind of operations, suggestion */
 INSERT INTO text_nl (Name, Text) VALUES
-  ('Title', '360° Feedback'),
+  ('Title', '360 graden Feedback'),
   ('Menu', 'Menu'),
   ('ID', 'ID'),
   ('Username', 'Gebruikersnaam'),
@@ -35,9 +35,9 @@ INSERT INTO text_nl (Name, Text) VALUES
   ('Poll_already_exists', 'Deze vragenlijst bestaat al'),
   ('Prohibited_to_prefer_yourself', 'Het is verboden om jezelf als voorkeur op te geven'),
   ('Added', 'Toegevoegd'),
-  ('Phase1_text', '<p>Welkom bij het 360° feedback project.</p><p>Klik op <b>Start</b> om verder te gaan met deel 1.</p>'),
-  ('Phase2_text', "<p>Welkom bij het 360° feedback project, deel 2.</p><p>We hebben het algoritme losgelaten op onze database, rekening houdend met jouw voorkeuren.</p><p>De collega's waarover jij anoniem gedetailleerde feedback moet geven, worden op de volgende pagina weergegeven. Je kan ook anoniem feedback over collega's naar keuze doorgeven via een vrij tekstveld.</p>"),
-  ('Project_text', "Het 360° feedback project bestaat uit twee delen:
+  ('Phase1_text', '<p>Welkom bij het 360 graden feedback project.</p><p>Klik op <b>Start</b> om verder te gaan met deel 1.</p>'),
+  ('Phase2_text', "<p>Welkom bij het 360 graden feedback project, deel 2.</p><p>We hebben het algoritme losgelaten op onze database, rekening houdend met jouw voorkeuren.</p><p>De collega's waarover jij anoniem gedetailleerde feedback moet geven, worden op de volgende pagina weergegeven. Je kan ook anoniem feedback over collega's naar keuze doorgeven via een vrij tekstveld.</p>"),
+  ('Project_text', "Het 360 graden feedback project bestaat uit twee delen:
 						<ol>
 							<li>
 								Deel 1 gaat over jouw eigen vragenlijst (zelfevaluatie) en jouw voorkeuren:
@@ -136,7 +136,7 @@ INSERT INTO text_nl (Name, Text) VALUES
 								Met vriendelijke groeten,
 							</p>
 							<p>
-								Het 360° Feedback team
+								Het 360 graden Feedback team
 							</p>'),
   ('New_user_credentials', 'Hier zijn jouw nieuwe gebruikersgegevens'),
   ('New_password_send', 'Het nieuwe wachtwoord werd verzonden naar jouw emailadres.'),
@@ -149,7 +149,7 @@ INSERT INTO text_nl (Name, Text) VALUES
 								Deel 2 is begonnen. Zodra je je aanmeld met jouw gebruikersnaam en wachtwoord, kan je de voor jouw verplichtte vragenlijsten invullen.
 							</p>'),
   ('Mail_results_available', '	<p>
-									De resultaten van het 360° feedback project zijn nu beschikbaar. Log in met jouw gebruikersnaam en wacthwoord om jouw persoonlijke resultaten te bekijken.
+									De resultaten van het 360 graden feedback project zijn nu beschikbaar. Log in met jouw gebruikersnaam en wacthwoord om jouw persoonlijke resultaten te bekijken.
 								</p>'),
   ('Reminder', 'Herinnering'),
   ('Reminder_own_poll', '<p>
