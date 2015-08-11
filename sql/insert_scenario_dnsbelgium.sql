@@ -4,227 +4,108 @@ DELETE FROM department;
 
 /* Departmenten toevoegen aan database */
 INSERT INTO department (Name) VALUES
-  ('Support/Communications'),
-  ('Operations'),
-  ('Development'),
-  ('Management'),
-  ('Finance/HR');
+  ('Engineering'),
+  ('Internal Affairs'),
+  ('External Relations'),
+  ('Management');
 
 /* Admin toevoegen aan database */
 INSERT INTO admin (Username, Password, Email) VALUES
-  ('Admin', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be');
+  ('admin', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be');
 
 /* Users toevoegen aan database*/
 INSERT INTO user (Firstname, Lastname, Username, Password, Email) VALUES
-  ('Maarten', 'Bosteels', 'MaartenB', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO',
-   'johanh@dnsbelgium.be'),
-  ('Kathleen', 'Buffels', 'KathleenB', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
-  ('Dimitri', 'De Graef', 'DimitriDG', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
-  ('Leander', 'Dierckx', 'LeanderD', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
-  ('Kevin', 'Dillaerts', 'KevinD', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
-  ('Philip', 'Du Bois', 'PhilipDB', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
-  ('Ronald', 'Geens', 'RonaldG', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
-  ('Kurt', 'Gielen', 'KurtG', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
-  ('Lut', 'Goedhuys', 'LutG', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
-  ('David', 'Goelen', 'DavidG', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
-  ('Loesje', 'Hermans', 'LoesjeH', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
-  ('Johan', 'Heylen', 'JohanH', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
-  ('Kevin', 'Jacquemyn', 'KevinJ', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
-  ('Jasper', 'Kesteloot', 'JasperK', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
-  ('Kristof', 'Konings', 'KristofK', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
-  ('Bert', 'Maleszka', 'BertM', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
-  ('Stijn', 'Niclaes', 'StijnN', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
-  ('Helga', 'Parijs', 'HelgaP', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
-  ('Nico', 'Point', 'NicoP', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
-  ('Veerle', 'Tenier', 'VeerleT', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
-  ('Kristof', 'Tuyteleers', 'KristofT', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
-  ('Hilde', 'Van Bree', 'HildeVB', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO',
-   'johanh@dnsbelgium.be'),
-  ('Cecile', 'Van der Borght', 'CecileVDB', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO',
-   'johanh@dnsbelgium.be'),
-  ('Veronique', 'Van der Borght', 'VeroniqueVDB', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO',
-   'johanh@dnsbelgium.be'),
-  ('Sven', 'Van Dyck', 'SvenVD', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO',
-   'johanh@dnsbelgium.be'),
-  ('Karen', 'Van Rillaer', 'KarenVR', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO',
-   'johanh@dnsbelgium.be'),
-  ('Pieter', 'Vandepitte', 'PieterV', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO',
-   'johanh@dnsbelgium.be'),
-  ('Peter', 'Vergote', 'PeterV', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO',
-   'johanh@dnsbelgium.be'),
-  ('Koen', 'Zagers', 'KoenZ', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be');
+  ('Maarten', 'Bosteels', 'maartenb', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO','johanh@dnsbelgium.be'),
+  ('Kathleen', 'Buffels', 'kathleenb', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
+  ('Leander', 'Dierckx', 'leanderd', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'leanderd@dnsbelgium.be'),
+  ('Philip', 'Du Bois', 'philipdb', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
+  ('Ronald', 'Geens', 'ronaldg', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
+  ('Kurt', 'Gielen', 'kurtg', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
+  ('Lut', 'Goedhuys', 'lutg', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
+  ('David', 'Goelen', 'davidg', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
+  ('Loesje', 'Hermans', 'loesjeh', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
+  ('Johan', 'Heylen', 'johanh', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
+  ('Kevin', 'Jacquemyn', 'kevinj', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
+  ('Jasper', 'Kesteloot', 'jasperk', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
+  ('Jonas', 'Sbai', 'jonass', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
+  ('Kristof', 'Konings', 'kristofk', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
+  ('Stijn', 'Niclaes', 'stijnn', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
+  ('Helga', 'Parijs', 'helgap', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
+  ('Nico', 'Point', 'nicop', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
+  ('Veerle', 'Tenier', 'veerlet', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
+  ('Kristof', 'Tuyteleers', 'kristoft', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
+  ('Hilde', 'Van Bree', 'hildevb', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO','johanh@dnsbelgium.be'),
+  ('Sven', 'Van Dyck', 'svenvd', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO','johanh@dnsbelgium.be'),
+  ('Karen', 'Van Rillaer', 'karenvr', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO','johanh@dnsbelgium.be'),
+  ('Pieter', 'Vandepitte', 'pieterv', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO','johanh@dnsbelgium.be'),
+  ('Peter', 'Vergote', 'peterv', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO','johanh@dnsbelgium.be'),
+  ('Koen', 'Zagers', 'koenz', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
+  ('Nan', 'Vandenbroeck', 'nanv', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO','johanh@dnsbelgium.be'),
+  ('Ruth', 'Venmans', 'ruthv', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO','johanh@dnsbelgium.be'),
+  ('Tom', 'Wouters', 'tomwo', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO','johanh@dnsbelgium.be');
 
 /* Users koppelen aan departement */
 INSERT INTO user_department (User, Department) VALUES
-  ((SELECT ID
-    FROM user
-    WHERE Firstname = 'Maarten' AND Lastname = 'Bosteels'), (SELECT ID
-                                                             FROM department
-                                                             WHERE Name = 'Management')),
-  ((SELECT ID
-    FROM user
-    WHERE Firstname = 'Kathleen' AND Lastname = 'Buffels'), (SELECT ID
-                                                             FROM department
-                                                             WHERE Name = 'Support/Communications')),
-  ((SELECT ID
-    FROM user
-    WHERE Firstname = 'Dimitri' AND Lastname = 'De Graef'), (SELECT ID
-                                                             FROM department
-                                                             WHERE Name = 'Operations')),
-  ((SELECT ID
-    FROM user
-    WHERE Firstname = 'Leander' AND Lastname = 'Dierckx'), (SELECT ID
-                                                            FROM department
-                                                            WHERE Name = 'Operations')),
-  ((SELECT ID
-    FROM user
-    WHERE Firstname = 'Kevin' AND Lastname = 'Dillaerts'), (SELECT ID
-                                                            FROM department
-                                                            WHERE Name = 'Support/Communications')),
-  ((SELECT ID
-    FROM user
-    WHERE Firstname = 'Philip' AND Lastname = 'Du Bois'), (SELECT ID
-                                                           FROM department
-                                                           WHERE Name = 'Management')),
-  ((SELECT ID
-    FROM user
-    WHERE Firstname = 'Ronald' AND Lastname = 'Geens'), (SELECT ID
-                                                         FROM department
-                                                         WHERE Name = 'Management')),
-  ((SELECT ID
-    FROM user
-    WHERE Firstname = 'Kurt' AND Lastname = 'Gielen'), (SELECT ID
-                                                        FROM department
-                                                        WHERE Name = 'Operations')),
-  ((SELECT ID
-    FROM user
-    WHERE Firstname = 'Lut' AND Lastname = 'Goedhuys'), (SELECT ID
-                                                         FROM department
-                                                         WHERE Name = 'Management')),
-  ((SELECT ID
-    FROM user
-    WHERE Firstname = 'David' AND Lastname = 'Goelen'), (SELECT ID
-                                                         FROM department
-                                                         WHERE Name = 'Management')),
-  ((SELECT ID
-    FROM user
-    WHERE Firstname = 'Loesje' AND Lastname = 'Hermans'), (SELECT ID
-                                                           FROM department
-                                                           WHERE Name = 'Development')),
-  ((SELECT ID
-    FROM user
-    WHERE Firstname = 'Johan' AND Lastname = 'Heylen'), (SELECT ID
-                                                         FROM department
-                                                         WHERE Name = 'Development')),
-  ((SELECT ID
-    FROM user
-    WHERE Firstname = 'Kevin' AND Lastname = 'Jacquemyn'), (SELECT ID
-                                                            FROM department
-                                                            WHERE Name = 'Development')),
-  ((SELECT ID
-    FROM user
-    WHERE Firstname = 'Jasper' AND Lastname = 'Kesteloot'), (SELECT ID
-                                                             FROM department
-                                                             WHERE Name = 'Support/Communications')),
-  ((SELECT ID
-    FROM user
-    WHERE Firstname = 'Kristof' AND Lastname = 'Konings'), (SELECT ID
-                                                            FROM department
-                                                            WHERE Name = 'Development')),
-  ((SELECT ID
-    FROM user
-    WHERE Firstname = 'Bert' AND Lastname = 'Maleszka'), (SELECT ID
-                                                          FROM department
-                                                          WHERE Name = 'Development')),
-  ((SELECT ID
-    FROM user
-    WHERE Firstname = 'Stijn' AND Lastname = 'Niclaes'), (SELECT ID
-                                                          FROM department
-                                                          WHERE Name = 'Development')),
-  ((SELECT ID
-    FROM user
-    WHERE Firstname = 'Helga' AND Lastname = 'Parijs'), (SELECT ID
-                                                         FROM department
-                                                         WHERE Name = 'Finance/HR')),
-  ((SELECT ID
-    FROM user
-    WHERE Firstname = 'Nico' AND Lastname = 'Point'), (SELECT ID
-                                                       FROM department
-                                                       WHERE Name = 'Operations')),
-  ((SELECT ID
-    FROM user
-    WHERE Firstname = 'Veerle' AND Lastname = 'Tenier'), (SELECT ID
-                                                          FROM department
-                                                          WHERE Name = 'Operations')),
-  ((SELECT ID
-    FROM user
-    WHERE Firstname = 'Kristof' AND Lastname = 'Tuyteleers'), (SELECT ID
-                                                               FROM department
-                                                               WHERE Name = 'Operations')),
-  ((SELECT ID
-    FROM user
-    WHERE Firstname = 'Hilde' AND Lastname = 'Van Bree'), (SELECT ID
-                                                           FROM department
-                                                           WHERE Name = 'Support/Communications')),
-  ((SELECT ID
-    FROM user
-    WHERE Firstname = 'Cecile' AND Lastname = 'Van der Borght'), (SELECT ID
-                                                                  FROM department
-                                                                  WHERE Name = 'Support/Communications')),
-  ((SELECT ID
-    FROM user
-    WHERE Firstname = 'Veronique' AND Lastname = 'Van der Borght'), (SELECT ID
-                                                                     FROM department
-                                                                     WHERE Name = 'Support/Communications')),
-  ((SELECT ID
-    FROM user
-    WHERE Firstname = 'Sven' AND Lastname = 'Van Dyck'), (SELECT ID
-                                                          FROM department
-                                                          WHERE Name = 'Operations')),
-  ((SELECT ID
-    FROM user
-    WHERE Firstname = 'Karen' AND Lastname = 'Van Rillaer'), (SELECT ID
-                                                              FROM department
-                                                              WHERE Name = 'Finance/HR')),
-  ((SELECT ID
-    FROM user
-    WHERE Firstname = 'Pieter' AND Lastname = 'Vandepitte'), (SELECT ID
-                                                              FROM department
-                                                              WHERE Name = 'Development')),
-  ((SELECT ID
-    FROM user
-    WHERE Firstname = 'Peter' AND Lastname = 'Vergote'), (SELECT ID
-                                                          FROM department
-                                                          WHERE Name = 'Management')),
-  ((SELECT ID
-    FROM user
-    WHERE Firstname = 'Koen' AND Lastname = 'Zagers'), (SELECT ID
-                                                        FROM department
-                                                        WHERE Name = 'Operations'));
+  ((SELECT ID FROM user WHERE Username = 'helgap'), (SELECT ID FROM department WHERE Name = 'Management'));
+INSERT INTO user_department (User, Department) VALUES
+  ((SELECT ID FROM user WHERE Username = 'maartenb'), (SELECT ID FROM department WHERE Name = 'Management'));
+INSERT INTO user_department (User, Department) VALUES
+  ((SELECT ID FROM user WHERE Username = 'ronaldg'), (SELECT ID FROM department WHERE Name = 'Management'));
+INSERT INTO user_department (User, Department) VALUES
+  ((SELECT ID FROM user WHERE Username = 'philipdb'), (SELECT ID FROM department WHERE Name = 'Management'));
+
+INSERT INTO user_department (User, Department) VALUES
+  ((SELECT ID FROM user WHERE Username = 'karenvr'), (SELECT ID FROM department WHERE Name = 'Internal Affairs'));
+INSERT INTO user_department (User, Department) VALUES
+  ((SELECT ID FROM user WHERE Username = 'nanv'), (SELECT ID FROM department WHERE Name = 'Internal Affairs'));
+INSERT INTO user_department (User, Department) VALUES
+  ((SELECT ID FROM user WHERE Username = 'davidg'), (SELECT ID FROM department WHERE Name = 'Internal Affairs'));
+INSERT INTO user_department (User, Department) VALUES
+  ((SELECT ID FROM user WHERE Username = 'koenz'), (SELECT ID FROM department WHERE Name = 'Internal Affairs'));
+INSERT INTO user_department (User, Department) VALUES
+  ((SELECT ID FROM user WHERE Username = 'kristoft'), (SELECT ID FROM department WHERE Name = 'Internal Affairs'));
+
+INSERT INTO user_department (User, Department) VALUES
+  ((SELECT ID FROM user WHERE Username = 'jonass'), (SELECT ID FROM department WHERE Name = 'External Relations'));
+INSERT INTO user_department (User, Department) VALUES
+  ((SELECT ID FROM user WHERE Username = 'jasperk'), (SELECT ID FROM department WHERE Name = 'External Relations'));
+INSERT INTO user_department (User, Department) VALUES
+  ((SELECT ID FROM user WHERE Username = 'veerlet'), (SELECT ID FROM department WHERE Name = 'External Relations'));
+INSERT INTO user_department (User, Department) VALUES
+  ((SELECT ID FROM user WHERE Username = 'loesjeh'), (SELECT ID FROM department WHERE Name = 'External Relations'));
+INSERT INTO user_department (User, Department) VALUES
+  ((SELECT ID FROM user WHERE Username = 'lutg'), (SELECT ID FROM department WHERE Name = 'External Relations'));
+INSERT INTO user_department (User, Department) VALUES
+  ((SELECT ID FROM user WHERE Username = 'kathleenb'), (SELECT ID FROM department WHERE Name = 'External Relations'));
+INSERT INTO user_department (User, Department) VALUES
+  ((SELECT ID FROM user WHERE Username = 'hildevb'), (SELECT ID FROM department WHERE Name = 'External Relations'));
+
+INSERT INTO user_department (User, Department) VALUES
+  ((SELECT ID FROM user WHERE Username = 'ruthv'), (SELECT ID FROM department WHERE Name = 'Engineering'));
+INSERT INTO user_department (User, Department) VALUES
+  ((SELECT ID FROM user WHERE Username = 'svenvd'), (SELECT ID FROM department WHERE Name = 'Engineering'));
+INSERT INTO user_department (User, Department) VALUES
+  ((SELECT ID FROM user WHERE Username = 'nicop'), (SELECT ID FROM department WHERE Name = 'Engineering'));
+INSERT INTO user_department (User, Department) VALUES
+  ((SELECT ID FROM user WHERE Username = 'johanh'), (SELECT ID FROM department WHERE Name = 'Engineering'));
+INSERT INTO user_department (User, Department) VALUES
+  ((SELECT ID FROM user WHERE Username = 'stijnn'), (SELECT ID FROM department WHERE Name = 'Engineering'));
+INSERT INTO user_department (User, Department) VALUES
+  ((SELECT ID FROM user WHERE Username = 'kevinj'), (SELECT ID FROM department WHERE Name = 'Engineering'));
+INSERT INTO user_department (User, Department) VALUES
+  ((SELECT ID FROM user WHERE Username = 'kurtg'), (SELECT ID FROM department WHERE Name = 'Engineering'));
+INSERT INTO user_department (User, Department) VALUES
+  ((SELECT ID FROM user WHERE Username = 'pieterv'), (SELECT ID FROM department WHERE Name = 'Engineering'));
+INSERT INTO user_department (User, Department) VALUES
+  ((SELECT ID FROM user WHERE Username = 'tomwo'), (SELECT ID FROM department WHERE Name = 'Engineering'));
+INSERT INTO user_department (User, Department) VALUES
+  ((SELECT ID FROM user WHERE Username = 'leanderd'), (SELECT ID FROM department WHERE Name = 'Engineering'));
+INSERT INTO user_department (User, Department) VALUES
+  ((SELECT ID FROM user WHERE Username = 'kristofk'), (SELECT ID FROM department WHERE Name = 'Engineering'));
+
 
 /* Managers toevoegen aan department*/
-UPDATE department
-SET Manager = (SELECT ID
-               FROM user
-               WHERE Firstname = 'Lut' AND Lastname = 'Goedhuys')
-WHERE Name = 'Support/Communications';
-UPDATE department
-SET Manager = (SELECT ID
-               FROM user
-               WHERE Firstname = 'David' AND Lastname = 'Goelen')
-WHERE Name = 'Operations';
-UPDATE department
-SET Manager = (SELECT ID
-               FROM user
-               WHERE Firstname = 'Maarten' AND Lastname = 'Bosteels')
-WHERE Name = 'Development';
-UPDATE department
-SET Manager = (SELECT ID
-               FROM user
-               WHERE Firstname = 'Philip' AND Lastname = 'Du Bois')
-WHERE Name = 'Management';
-UPDATE department
-SET Manager = (SELECT ID
-               FROM user
-               WHERE Firstname = 'Peter' AND Lastname = 'Vergote')
-WHERE Name = 'Finance/HR';
+UPDATE department SET Manager = (SELECT ID FROM user WHERE Username = 'helgap') WHERE Name = 'Internal Affairs';
+UPDATE department SET Manager = (SELECT ID FROM user WHERE Username = 'maartenb') WHERE Name = 'Engineering';
+UPDATE department SET Manager = (SELECT ID FROM user WHERE Username = 'ronaldg') WHERE Name = 'External Relations';
+UPDATE department SET Manager = (SELECT ID FROM user WHERE Username = 'philipdb') WHERE Name = 'Management';
