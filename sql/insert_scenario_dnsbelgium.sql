@@ -32,7 +32,7 @@ INSERT INTO user (Firstname, Lastname, Username, Password, Email) VALUES
   ('Stijn', 'Niclaes', 'stijnn', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
   ('Helga', 'Parijs', 'helgap', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
   ('Nico', 'Point', 'nicop', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
-  ('Veerle', 'Tenier', 'veerlet', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
+  ('Veerle', 'Ternier', 'veerlet', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
   ('Kristof', 'Tuyteleers', 'kristoft', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
   ('Hilde', 'Van Bree', 'hildevb', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO','johanh@dnsbelgium.be'),
   ('Sven', 'Van Dyck', 'svenvd', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO','johanh@dnsbelgium.be'),
