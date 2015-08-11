@@ -10,15 +10,11 @@ function mailFromProject($to, $toName, $subject, $message)
     $m = new PHPMailer;
 
     $m->isSMTP();
-    $m->SMTPAuth = true;
+    $m->SMTPAuth = false;
 
-    $m->Host = 'smtp.gmail.com';
-    $m->Username = 'threesixtyweb.stage@gmail.com';
-    $m->Password = 'Stage@DNS.be';
-    $m->SMTPSecure = 'tls'; #'ssl';
-    $m->Port = 587; #465;
+    $m->Host = 'smtp.dns.be';
 
-    $m->From = 'threesixtyweb.stage@gmail.com';
+    $m->From = 'noreply@dnsbelgium.be';
     $m->FromName = get_text('Title');
     $m->addAddress($to, $toName);
 
