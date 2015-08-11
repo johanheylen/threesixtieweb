@@ -98,15 +98,7 @@ require('core/init.php');
             <li <?php if ($selected_page == 'Departments') {
                 echo 'class="active"';
             } ?>><a href="departments.php"><?php echo get_text('Departments'); ?></a></li>
-            <?php
-            if (get_published_batch_id()) {
-                ?>
-                <li <?php if ($selected_page == 'User') {
-                    echo 'class="active"';
-                } ?>><a href="user.php"><?php echo get_text('Results'); ?></a></li>
-            <?php
-            }
-
+        <?php
         }
         if (logged_in()) {
             ?>
