@@ -15,16 +15,16 @@ INSERT INTO admin (Username, Password, Email) VALUES
 
 /* Users toevoegen aan database*/
 INSERT INTO user (Firstname, Lastname, Username, Password, Email) VALUES
-  ('Maarten', 'Bosteels', 'maartenb', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO','johanh@dnsbelgium.be'),
-  ('Kathleen', 'Buffels', 'kathleenb', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
+  ('Maarten', 'Bosteels', 'maartenb', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO','leanderd@dnsbelgium.be'),
+  ('Kathleen', 'Buffels', 'kathleenb', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'leanderd@dnsbelgium.be'),
   ('Leander', 'Dierckx', 'leanderd', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'leanderd@dnsbelgium.be'),
-  ('Philip', 'Du Bois', 'philipdb', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
-  ('Ronald', 'Geens', 'ronaldg', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
-  ('Kurt', 'Gielen', 'kurtg', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
-  ('Lut', 'Goedhuys', 'lutg', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
-  ('David', 'Goelen', 'davidg', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
-  ('Loesje', 'Hermans', 'loesjeh', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
-  ('Johan', 'Heylen', 'johanh', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
+  ('Philip', 'Du Bois', 'philipdb', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'leanderd@dnsbelgium.be'),
+  ('Ronald', 'Geens', 'ronaldg', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'leanderd@dnsbelgium.be'),
+  ('Kurt', 'Gielen', 'kurtg', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'leanderd@dnsbelgium.be'),
+  ('Lut', 'Goedhuys', 'lutg', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'leanderd@dnsbelgium.be'),
+  ('David', 'Goelen', 'davidg', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'leanderd@dnsbelgium.be'),
+  ('Loesje', 'Hermans', 'loesjeh', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'leanderd@dnsbelgium.be'),
+  ('Johan', 'Heylen', 'johanh', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'leanderd@dnsbelgium.be'),
   ('Kevin', 'Jacquemyn', 'kevinj', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
   ('Jasper', 'Kesteloot', 'jasperk', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
   ('Jonas', 'Sbai', 'jonass', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
@@ -35,14 +35,14 @@ INSERT INTO user (Firstname, Lastname, Username, Password, Email) VALUES
   ('Veerle', 'Ternier', 'veerlet', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
   ('Kristof', 'Tuyteleers', 'kristoft', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
   ('Hilde', 'Van Bree', 'hildevb', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO','johanh@dnsbelgium.be'),
-  ('Sven', 'Van Dyck', 'svenvd', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO','johanh@dnsbelgium.be'),
-  ('Karen', 'Van Rillaer', 'karenvr', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO','johanh@dnsbelgium.be'),
-  ('Pieter', 'Vandepitte', 'pieterv', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO','johanh@dnsbelgium.be'),
-  ('Peter', 'Vergote', 'peterv', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO','johanh@dnsbelgium.be'),
-  ('Koen', 'Zagers', 'koenz', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'johanh@dnsbelgium.be'),
-  ('Nan', 'Vandenbroeck', 'nanv', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO','johanh@dnsbelgium.be'),
-  ('Ruth', 'Venmans', 'ruthv', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO','johanh@dnsbelgium.be'),
-  ('Tom', 'Wouters', 'tomwo', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO','johanh@dnsbelgium.be');
+  ('Sven', 'Van Dyck', 'svenvd', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO','karenvr@dnsbelgium.be'),
+  ('Karen', 'Van Rillaer', 'karenvr', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO','karenvr@dnsbelgium.be'),
+  ('Pieter', 'Vandepitte', 'pieterv', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO','karenvr@dnsbelgium.be'),
+  ('Peter', 'Vergote', 'peterv', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO','karenvr@dnsbelgium.be'),
+  ('Koen', 'Zagers', 'koenz', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'karenvr@dnsbelgium.be'),
+  ('Nan', 'Vandenbroeck', 'nanv', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO','karenvr@dnsbelgium.be'),
+  ('Ruth', 'Venmans', 'ruthv', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO','karenvr@dnsbelgium.be'),
+  ('Tom', 'Wouters', 'tomwo', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO','karenvr@dnsbelgium.be');
 
 /* Users koppelen aan departement */
 INSERT INTO user_department (User, Department) VALUES
