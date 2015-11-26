@@ -60,7 +60,7 @@ INSERT INTO user_department (User, Department) VALUES
   ((SELECT ID FROM user WHERE Username = 'nanv'), (SELECT ID FROM department WHERE Name = 'Internal Affairs'));
 INSERT INTO user_department (User, Department) VALUES
   ((SELECT ID FROM user WHERE Username = 'davidg'), (SELECT ID FROM department WHERE Name = 'Internal Affairs'));
---INSERT INTO user_department (User, Department) VALUES
+-- INSERT INTO user_department (User, Department) VALUES
 --  ((SELECT ID FROM user WHERE Username = 'koenz'), (SELECT ID FROM department WHERE Name = 'Internal Affairs'));
 INSERT INTO user_department (User, Department) VALUES
   ((SELECT ID FROM user WHERE Username = 'kristoft'), (SELECT ID FROM department WHERE Name = 'Internal Affairs'));
@@ -102,7 +102,7 @@ INSERT INTO user_department (User, Department) VALUES
   ((SELECT ID FROM user WHERE Username = 'tomwo'), (SELECT ID FROM department WHERE Name = 'Engineering'));
 INSERT INTO user_department (User, Department) VALUES
   ((SELECT ID FROM user WHERE Username = 'leanderd'), (SELECT ID FROM department WHERE Name = 'Engineering'));
---INSERT INTO user_department (User, Department) VALUES
+-- INSERT INTO user_department (User, Department) VALUES
 --  ((SELECT ID FROM user WHERE Username = 'kristofk'), (SELECT ID FROM department WHERE Name = 'Engineering'));
 
 
