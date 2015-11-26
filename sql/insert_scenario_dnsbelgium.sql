@@ -28,7 +28,7 @@ INSERT INTO user (Firstname, Lastname, Username, Password, Email) VALUES
   ('Kevin', 'Jacquemyn', 'kevinj', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'kevinj@dnsbelgium.be'),
   ('Jasper', 'Kesteloot', 'jasperk', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'jasperk@dnsbelgium.be'),
   ('Jonas', 'Sbai', 'jonass', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'jonass@dnsbelgium.be'),
-  ('Kristof', 'Konings', 'kristofk', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'kristofk@dnsbelgium.be'),
+--  ('Kristof', 'Konings', 'kristofk', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'kristofk@dnsbelgium.be'),
   ('Stijn', 'Niclaes', 'stijnn', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'stijnn@dnsbelgium.be'),
   ('Helga', 'Parijs', 'helgap', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'helgap@dnsbelgium.be'),
   ('Nico', 'Point', 'nicop', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'nicop@dnsbelgium.be'),
@@ -39,7 +39,7 @@ INSERT INTO user (Firstname, Lastname, Username, Password, Email) VALUES
   ('Karen', 'Van Rillaer', 'karenvr', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO','karenvr@dnsbelgium.be'),
   ('Pieter', 'Vandepitte', 'pieterv', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO','pieterv@dnsbelgium.be'),
   ('Peter', 'Vergote', 'peterv', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO','peterv@dnsbelgium.be'),
-  ('Koen', 'Zagers', 'koenz', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'koenz@dnsbelgium.be'),
+--  ('Koen', 'Zagers', 'koenz', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO', 'koenz@dnsbelgium.be'),
   ('Nan', 'Vandenbroeck', 'nanv', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO','nanv@dnsbelgium.be'),
   ('Ruth', 'Venmans', 'ruthv', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO','ruthv@dnsbelgium.be'),
   ('Tom', 'Wouters', 'tomwo', '$2y$10$CQtvXZmXCjMBfC9LePexPeUOeX/ihEzClezWg/bCsFqwXbw0zKRKO','tomwo@dnsbelgium.be');
@@ -60,8 +60,8 @@ INSERT INTO user_department (User, Department) VALUES
   ((SELECT ID FROM user WHERE Username = 'nanv'), (SELECT ID FROM department WHERE Name = 'Internal Affairs'));
 INSERT INTO user_department (User, Department) VALUES
   ((SELECT ID FROM user WHERE Username = 'davidg'), (SELECT ID FROM department WHERE Name = 'Internal Affairs'));
-INSERT INTO user_department (User, Department) VALUES
-  ((SELECT ID FROM user WHERE Username = 'koenz'), (SELECT ID FROM department WHERE Name = 'Internal Affairs'));
+--INSERT INTO user_department (User, Department) VALUES
+--  ((SELECT ID FROM user WHERE Username = 'koenz'), (SELECT ID FROM department WHERE Name = 'Internal Affairs'));
 INSERT INTO user_department (User, Department) VALUES
   ((SELECT ID FROM user WHERE Username = 'kristoft'), (SELECT ID FROM department WHERE Name = 'Internal Affairs'));
 INSERT INTO user_department (User, Department) VALUES
@@ -102,8 +102,8 @@ INSERT INTO user_department (User, Department) VALUES
   ((SELECT ID FROM user WHERE Username = 'tomwo'), (SELECT ID FROM department WHERE Name = 'Engineering'));
 INSERT INTO user_department (User, Department) VALUES
   ((SELECT ID FROM user WHERE Username = 'leanderd'), (SELECT ID FROM department WHERE Name = 'Engineering'));
-INSERT INTO user_department (User, Department) VALUES
-  ((SELECT ID FROM user WHERE Username = 'kristofk'), (SELECT ID FROM department WHERE Name = 'Engineering'));
+--INSERT INTO user_department (User, Department) VALUES
+--  ((SELECT ID FROM user WHERE Username = 'kristofk'), (SELECT ID FROM department WHERE Name = 'Engineering'));
 
 
 /* Managers toevoegen aan department*/
